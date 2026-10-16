@@ -1,0 +1,19 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "tributes": {
+      ".read": true,
+      "$id": {
+        ".write": "!data.exists() && newData.exists()",
+        ".validate": "newData.hasChildren(['name','relation','category','message','ts']) && newData.child('name').isString() && newData.child('name').val().length > 0 && newData.child('name').val().length <= 80 && newData.child('relation').isString() && newData.child('relation').val().length <= 80 && newData.child('category').isString() && newData.child('category').val().length <= 40 && newData.child('message').isString() && newData.child('message').val().length > 0 && newData.child('message').val().length <= 2000 && newData.child('ts').val() == now",
+        "name": {}, "relation": {}, "category": {}, "message": {}, "ts": {},
+        "$other": { ".validate": false }
+      }
+    },
+    "prayerCount": {
+      ".read": true,
+      ".write": "newData.isNumber() && newData.val() == (data.exists() ? data.val() + 1 : 1)"
+    }
+  }
+}
