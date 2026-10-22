@@ -1,0 +1,14 @@
+{
+  "name": "أ/محمد عثمان - سيرة ومسيرة عطاء وأثر لا يزول",
+  "short_name": "محمد عثمان",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    { "src": "images/121536840_1013870365703207_8939207304560790042_n.jpg", "sizes": "512x512", "type": "image/jpeg", "purpose": "any" }
+  ]
+}
